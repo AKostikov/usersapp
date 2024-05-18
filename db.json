@@ -1,0 +1,284 @@
+{
+    "users" : [
+        {
+			"gender": "male",
+			"name": {
+				"title": "Mr",
+				"first": "Harley",
+				"last": "Thompson"
+			},
+			"location": {
+				"street": {
+					"number": 1959,
+					"name": "Princes Street"
+				},
+				"city": "Hastings",
+				"state": "Taranaki",
+				"country": "New Zealand",
+				"postcode": 69715,
+				"coordinates": {
+					"latitude": "49.8730",
+					"longitude": "-153.2315"
+				},
+				"timezone": {
+					"offset": "-3:00",
+					"description": "Brazil, Buenos Aires, Georgetown"
+				}
+			},
+			"email": "harley.thompson@example.com",
+			"login": {
+				"uuid": "6b53b4ba-5444-4c1a-9079-2d6ff79f239a",
+				"username": "heavymeercat225",
+				"password": "010203",
+				"salt": "wrsqWfNL",
+				"md5": "f96ff8749af9c6007133dfac09821fcc",
+				"sha1": "79e02373ed044943f7a9698e1595cff8f804f2b8",
+				"sha256": "2a40cfe05b62f29bf3398b579995cf0c67b7f2454d9faf49e2b3d948e5a12da6"
+			},
+			"dob": {
+				"date": "1992-06-12T01:52:57.543Z",
+				"age": 31
+			},
+			"registered": {
+				"date": "2010-07-22T13:43:40.347Z",
+				"age": 13
+			},
+			"phone": "(946)-912-5625",
+			"cell": "(222)-499-0582",
+			"id": {
+				"name": "",
+				"value": null
+			},
+			"picture": {
+				"large": "https://randomuser.me/api/portraits/men/99.jpg",
+				"medium": "https://randomuser.me/api/portraits/med/men/99.jpg",
+				"thumbnail": "https://randomuser.me/api/portraits/thumb/men/99.jpg"
+			},
+			"nat": "NZ"
+		},
+		{
+			"gender": "female",
+			"name": {
+				"title": "Ms",
+				"first": "Mimount",
+				"last": "Grob"
+			},
+			"location": {
+				"street": {
+					"number": 7891,
+					"name": "Drenthehaven"
+				},
+				"city": "Molenhoek",
+				"state": "Noord-Brabant",
+				"country": "Netherlands",
+				"postcode": "7490 TJ",
+				"coordinates": {
+					"latitude": "-52.1815",
+					"longitude": "11.0909"
+				},
+				"timezone": {
+					"offset": "+8:00",
+					"description": "Beijing, Perth, Singapore, Hong Kong"
+				}
+			},
+			"email": "mimount.grob@example.com",
+			"login": {
+				"uuid": "4347ef18-d4af-4a3f-9c78-8428ac40f37f",
+				"username": "whitepanda865",
+				"password": "jimbob",
+				"salt": "jFQWsc0m",
+				"md5": "322ff2373df1846b8484487bb2a7fb3a",
+				"sha1": "812ae97f4c7ef5cf97c9c028746b1519cd9964db",
+				"sha256": "41c3b95e34046754f3a8f481ca583e828b5abefee52d401412deaec3834b4ec1"
+			},
+			"dob": {
+				"date": "1979-08-20T21:48:40.078Z",
+				"age": 44
+			},
+			"registered": {
+				"date": "2007-11-30T12:44:46.669Z",
+				"age": 16
+			},
+			"phone": "(0086) 160715",
+			"cell": "(06) 52115434",
+			"id": {
+				"name": "BSN",
+				"value": "65501059"
+			},
+			"picture": {
+				"large": "https://randomuser.me/api/portraits/women/43.jpg",
+				"medium": "https://randomuser.me/api/portraits/med/women/43.jpg",
+				"thumbnail": "https://randomuser.me/api/portraits/thumb/women/43.jpg"
+			},
+			"nat": "NL"
+		},
+		{
+			"gender": "female",
+			"name": {
+				"title": "Miss",
+				"first": "Zoe",
+				"last": "Grewal"
+			},
+			"location": {
+				"street": {
+					"number": 4552,
+					"name": "George St"
+				},
+				"city": "Radisson",
+				"state": "Nova Scotia",
+				"country": "Canada",
+				"postcode": "K7F 7E9",
+				"coordinates": {
+					"latitude": "34.6998",
+					"longitude": "126.1806"
+				},
+				"timezone": {
+					"offset": "0:00",
+					"description": "Western Europe Time, London, Lisbon, Casablanca"
+				}
+			},
+			"email": "zoe.grewal@example.com",
+			"login": {
+				"uuid": "9471dadc-c134-41da-aa1c-18d93219667a",
+				"username": "biggorilla308",
+				"password": "huang",
+				"salt": "IXuqPq4e",
+				"md5": "dadd29bca8e4c8eb3fbb99bfda10be3f",
+				"sha1": "29ee3ebd07c4c352febe56bc75af865a1e871aa1",
+				"sha256": "1b35f87480709a7d86a9720cf4718226c744fbd9df0d3e363ac869131abb1e72"
+			},
+			"dob": {
+				"date": "1957-11-22T17:21:11.379Z",
+				"age": 66
+			},
+			"registered": {
+				"date": "2018-01-10T14:33:34.260Z",
+				"age": 6
+			},
+			"phone": "Q68 J69-6230",
+			"cell": "N89 G58-1108",
+			"id": {
+				"name": "SIN",
+				"value": "370238784"
+			},
+			"picture": {
+				"large": "https://randomuser.me/api/portraits/women/57.jpg",
+				"medium": "https://randomuser.me/api/portraits/med/women/57.jpg",
+				"thumbnail": "https://randomuser.me/api/portraits/thumb/women/57.jpg"
+			},
+			"nat": "CA"
+		},
+		{
+			"gender": "male",
+			"name": {
+				"title": "Mr",
+				"first": "Driss",
+				"last": "Overgaauw"
+			},
+			"location": {
+				"street": {
+					"number": 8371,
+					"name": "Kroningslaan"
+				},
+				"city": "'t Zand",
+				"state": "Zuid-Holland",
+				"country": "Netherlands",
+				"postcode": "5054 NE",
+				"coordinates": {
+					"latitude": "3.3978",
+					"longitude": "11.0701"
+				},
+				"timezone": {
+					"offset": "-9:00",
+					"description": "Alaska"
+				}
+			},
+			"email": "driss.overgaauw@example.com",
+			"login": {
+				"uuid": "1309fc6e-1b61-4bf6-8777-a8c9c54a4e17",
+				"username": "organicfrog269",
+				"password": "1975",
+				"salt": "ikEc07Sv",
+				"md5": "2d6c4da0258f88ba9019b41193f0860e",
+				"sha1": "55d8b792373b250503317d92191cad78e8749fed",
+				"sha256": "2914740d917b9fbce3e79612782052f07fd24363336d141eff7f36dc5e6a6f80"
+			},
+			"dob": {
+				"date": "1983-01-06T02:57:36.061Z",
+				"age": 41
+			},
+			"registered": {
+				"date": "2011-11-13T05:07:10.900Z",
+				"age": 12
+			},
+			"phone": "(083) 1802989",
+			"cell": "(06) 41103242",
+			"id": {
+				"name": "BSN",
+				"value": "45703447"
+			},
+			"picture": {
+				"large": "https://randomuser.me/api/portraits/men/63.jpg",
+				"medium": "https://randomuser.me/api/portraits/med/men/63.jpg",
+				"thumbnail": "https://randomuser.me/api/portraits/thumb/men/63.jpg"
+			},
+			"nat": "NL"
+		},
+		{
+			"gender": "male",
+			"name": {
+				"title": "Mr",
+				"first": "Agustín",
+				"last": "Marín"
+			},
+			"location": {
+				"street": {
+					"number": 6443,
+					"name": "Calle de Pedro Bosch"
+				},
+				"city": "San Sebastián",
+				"state": "Islas Baleares",
+				"country": "Spain",
+				"postcode": 71115,
+				"coordinates": {
+					"latitude": "-72.4741",
+					"longitude": "-35.2375"
+				},
+				"timezone": {
+					"offset": "+5:00",
+					"description": "Ekaterinburg, Islamabad, Karachi, Tashkent"
+				}
+			},
+			"email": "agustin.marin@example.com",
+			"login": {
+				"uuid": "33c9a9d5-bfa4-4518-af39-e111d7989378",
+				"username": "organicleopard731",
+				"password": "hermes",
+				"salt": "Bhlt4EAC",
+				"md5": "06b10bb81e75b317c95c865b997262ab",
+				"sha1": "678d8526d94e89cc97d3f4103f37f30926832b99",
+				"sha256": "1533dd7a41e9362b1046e35f04a429f03f8f14d124c2eeb67190a122c278d105"
+			},
+			"dob": {
+				"date": "1991-03-02T12:29:47.359Z",
+				"age": 33
+			},
+			"registered": {
+				"date": "2019-04-27T18:27:56.393Z",
+				"age": 5
+			},
+			"phone": "987-575-342",
+			"cell": "679-616-446",
+			"id": {
+				"name": "DNI",
+				"value": "71988679-S"
+			},
+			"picture": {
+				"large": "https://randomuser.me/api/portraits/men/86.jpg",
+				"medium": "https://randomuser.me/api/portraits/med/men/86.jpg",
+				"thumbnail": "https://randomuser.me/api/portraits/thumb/men/86.jpg"
+			},
+			"nat": "ES"
+		}
+    ]
+}

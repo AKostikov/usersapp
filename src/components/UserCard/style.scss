@@ -1,0 +1,138 @@
+.usercard {
+  background-color: #1A1C23;
+  width: 334px;
+  height: 210px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.usercard:hover {
+  border: 1px solid #8C8988;
+  cursor: pointer; 
+}
+
+.usercard:hover .usercard__header-text-main {
+  color: #CF7B5A;
+}
+
+.usercard:hover .usercard_avatar-image {
+  filter: brightness(130%);
+}
+
+.usercard:hover .delete-box{
+  visibility: visible;
+}
+
+.usercard__header {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.usercard__header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px
+}
+
+
+
+.usercard__header-text-main{
+  color: #DCD8D3;
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  
+}
+
+.usercard__header-text-add{
+  color: #DCD8D3;
+  font-family: "Jura", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+}
+
+.usercard__avatar {
+  border-radius: 100%;
+  margin-right: 10px;
+  width: 65px;
+  height: 65px;
+  overflow: hidden;
+}
+
+.usercard_avatar-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.usercard__row {
+  margin: 10px;
+  overflow: hidden;
+  max-height: 21px;
+  white-space: nowrap; /* Запрещает перенос строки */
+  overflow: hidden; /* Скрывает часть содержимого, выходящую за границы контейнера */
+  text-overflow: ellipsis; /* Заменяет скрытый текст многоточием */
+}
+
+.usercard__row__title {
+  display: inline-block;
+  width: 65px;
+  color: #8C8988;
+  font-family: "Jura", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+}
+
+.usercard__row__value{
+  margin: 10px;
+  color: #DCD8D3;
+  font-family: "Jura", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+
+}
+
+
+.delete-box {
+  visibility: hidden;
+  position: absolute;
+  background-color: #1A1C23;
+  box-sizing: border-box;
+  top: 0px; 
+  right: 0px; 
+  width: 40px; 
+  height: 40px; 
+  border-bottom-left-radius: 16px;
+
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #CF7B5A33;
+  border-left: 1px solid #CF7B5A33;
+  overflow: hidden;
+  display: flex;;
+  justify-content: center;
+  align-items: center; 
+ }
+
+ .delete-icon{
+  width: 8px;
+  height: 12px;
+  background-color: red;
+ }

@@ -1,0 +1,43 @@
+.stat-panel {
+  margin: 10px;
+  margin-left: auto; // отправляет вправо - как?
+  padding: 25px;
+  min-width: 332px;
+  height: 884px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #1A1C23;
+  border-radius: 3%;
+  color: #DCD8D3;
+  font-family: "Jura", sans-serif;
+  text-align: left;
+}
+
+.stat-main{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.stat-sub-main{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.stat-sub-label{
+  display: inline-block;
+  width: 80px;
+  color: #8C8988;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.stat-sub-value{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
