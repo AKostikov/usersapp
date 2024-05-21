@@ -13,7 +13,7 @@ interface SearchProps {
 const SearchBar: React.FC<SearchProps> = ({ onTextChange, value }) => {
     return (
         <div className="search-bar">
-            <input type="text" id="search" name="search" className="search-input" value={value} onChange={onTextChange} />
+            <input placeholder='Search' type="text" id="search" name="search" className="search-input" value={value} onChange={onTextChange} />
             <div className="refresh-button">Refresh Users</div>
         </div>
     );

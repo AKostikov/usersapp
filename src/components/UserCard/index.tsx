@@ -1,6 +1,6 @@
 import './style.scss';
 import { User } from '../../redux/User/type';
-//import DeleteIcon from './delete.png'
+//import deleteIcon from './delete.svg';
 
 interface Props {
   user: User;
@@ -11,7 +11,7 @@ const UserCard = ({ user, onDelete }: Props) => {
   return (
     <div className='usercard'>
       <div className="delete-box">
-        <div className='delete-icon'></div>        
+      <img src="/delete.svg" alt="Delete Icon" />     
       </div> 
       <div className='usercard__header'>
         <div className='usercard__avatar'>
