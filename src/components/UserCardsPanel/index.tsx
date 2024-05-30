@@ -10,22 +10,37 @@ interface StatisticsProps {
 }
 
 const UserCardsPanel : React.FC<StatisticsProps> = ({ searchText })  => { 
-  // searchText - почему всегда актуальное?
-  const { users  } = useSelector((state: RootState) => state.User);
+
+  const { users, pageNumber } = useSelector((state: RootState) => state.User);
+  const [fetching, setFetching] = useState(true);
   const dispatch = useDispatch<AppDispatch>();
 
 
   useEffect(() => {
-    dispatch(get());
-  }, []);
+    if(fetching){
+      setFetching(false);
+      dispatch(get(pageNumber));
+      console.log("test1");
+      setFetching(false);
+    }
+  }, [fetching]);
 
 
   const handleDelete = (id: string) => {
     
   };
 
+  const handleScroll = (e : any) => {
+    const { scrollHeight, clientHeight, scrollTop } = e.currentTarget;
+    const scrolledToBottom = scrollHeight - clientHeight === scrollTop;
+    if (scrolledToBottom) {
+      //console.log('test'); // Выводит "test", когда прокрутили до конца
+      setFetching(true);
+    }
+  };
+
   return (
-    <div className="usercards-panel">
+    <div className="usercards-panel" onScroll={handleScroll}>
 
       {users
         .filter(

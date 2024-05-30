@@ -7,6 +7,7 @@ import { createAction } from '@reduxjs/toolkit';
 
 interface UsersState {
   users: User[];
+  pageNumber : number,
   status: 'idle' | 'loading' | 'succeeded' | 'failed';
   error: string | null;
   stat: Statistics;
@@ -25,10 +26,13 @@ let initStat: Statistics = {
 
 const initialState: UsersState = {
   users: [],
+  pageNumber : 0,
   status: 'idle',
   error: null,
   stat: initStat,
 };
+
+export const setPageNumber = createAction<number>('setPageNumber');
 
 export const userSlice = createSlice({
   name: 'User',
@@ -36,8 +40,17 @@ export const userSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
+      .addCase(setPageNumber, (state, action: PayloadAction<number>) => {
+        state.pageNumber = action.payload;
+      })
       .addCase(get.fulfilled, (state, action) => {
-        state.users = action.payload;
+        state.pageNumber += 1;
+        if(state.pageNumber == 1){
+          state.users = action.payload
+        }
+        else{
+          state.users = [...state.users,...action.payload];
+        }
         state.stat.count = 0;
         state.stat.count11to20 = 0;
         state.stat.count21to30 = 0;
@@ -79,8 +92,8 @@ export const {} = userSlice.actions;
 
 export default userSlice.reducer;
 
-export const get = createAsyncThunk('https://randomuser.me/api/?results=250', async (): Promise<User[]> => {
-  const users = (await axios.get('https://randomuser.me/api/?results=250')).data.results;
+export const get = createAsyncThunk('https://randomuser.me/', async (pageNumber : number): Promise<User[]> => {
+  const users = (await axios.get(`https://randomuser.me/api/?page=${pageNumber+1}&results=50`)).data.results;
   console.log(users);
   return users;
 });

@@ -12,13 +12,11 @@ interface StatisticsProps {
 
 const StatPanel = () => {
 
-  const { stat  } = useSelector((state: RootState) => state.User);
+  const { stat, pageNumber  } = useSelector((state: RootState) => state.User);
   const dispatch = useDispatch<AppDispatch>();
 
   useEffect(() => {
-    dispatch(get());
-   
- 
+    //dispatch(get(pageNumber));
   }, []);
 
   return (

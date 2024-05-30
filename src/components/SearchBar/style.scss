@@ -9,6 +9,7 @@
 }
 
 .search-input {
+  box-sizing: border-box;
   width: 334px;
   height: 52px;
   background-color: #1A1C23;
@@ -18,8 +19,10 @@
   font-weight: 500;
   line-height: 24px;
   text-align: left;
+  padding-left: 10px;
   border: none;
   border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .search-input:hover {
